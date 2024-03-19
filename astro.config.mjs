@@ -6,7 +6,10 @@ import vue from "@astrojs/vue";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [db(), tailwind({
-    applyBaseStyles: false
-  }), vue()]
+  integrations: [
+    db(),
+    tailwind({ applyBaseStyles: false }),
+    vue()
+  ],
+  output: 'server'
 });
