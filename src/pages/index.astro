@@ -1,6 +1,6 @@
 ---
 import Layout from '@/layouts/Layout.astro'
-import { Button } from '@/components/ui/button'
+import TreatyTest from '@/components/TreatyTest.vue'
 
 import '@/styles/globals.css'
 ---
@@ -8,6 +8,7 @@ import '@/styles/globals.css'
 <Layout title="Welcome to Astro.">
 	<main>
 		<h1 class="">TODO App</h1>
-		<Button>Test</Button>
+
+		<TreatyTest client:only />
 	</main>
 </Layout>
