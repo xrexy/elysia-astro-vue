@@ -1,3 +1,12 @@
 {
-  "extends": "astro/tsconfigs/strict"
+  "extends": "astro/tsconfigs/strict",
+  "compilerOptions": {
+    "baseUrl": "/home/desktop/Code/elysia-astro-vue",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    },
+    "jsx": "preserve"
+  }
 }
